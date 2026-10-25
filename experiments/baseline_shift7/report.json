@@ -1,0 +1,121 @@
+{
+  "features": "handcrafted_shift7.parquet",
+  "heuristics": {
+    "prior": {
+      "logloss": 0.6175326005839513,
+      "auc": 0.5,
+      "gauc": 0.5,
+      "ndcg@10": 0.7307920994040193,
+      "ndcg_sessions_share": 0.567961281933977
+    },
+    "user_algo_listened_rate": {
+      "logloss": 0.4686796509039864,
+      "auc": 0.8188177113952182,
+      "gauc": 0.443994265939583,
+      "ndcg@10": 0.6092207434943006,
+      "ndcg_sessions_share": 0.567961281933977
+    },
+    "item_listened_rate": {
+      "logloss": 0.6527372623149875,
+      "auc": 0.6393179011104364,
+      "gauc": 0.5546284047341096,
+      "ndcg@10": 0.735363813023153,
+      "ndcg_sessions_share": 0.567961281933977
+    },
+    "user_item_last_ratio": {
+      "logloss": 1.6086338383102345,
+      "auc": 0.6560870251743867,
+      "gauc": 0.5346260424072189,
+      "ndcg@10": 0.7532237843255943,
+      "ndcg_sessions_share": 0.567961281933977
+    },
+    "user_last20_listened": {
+      "logloss": 0.5040484831754306,
+      "auc": 0.8646008292617728,
+      "gauc": 0.6228810532954195,
+      "ndcg@10": 0.676107680556954,
+      "ndcg_sessions_share": 0.567961281933977
+    }
+  },
+  "params": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 127,
+    "min_data_in_leaf": 200,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "max_bin": 255,
+    "num_threads": 6,
+    "verbose": -1
+  },
+  "lgbm_all": {
+    "runs": [
+      {
+        "valid": {
+          "logloss": 0.35443422808196073,
+          "auc": 0.9063078730400638,
+          "gauc": 0.7377339713776867,
+          "ndcg@10": 0.7659456340828595,
+          "ndcg_sessions_share": 0.5664826180715182
+        },
+        "test": {
+          "logloss": 0.3477561155461681,
+          "auc": 0.9073834186240214,
+          "gauc": 0.738301441918941,
+          "ndcg@10": 0.7700732973707327,
+          "ndcg_sessions_share": 0.567961281933977
+        },
+        "best_iteration": 407,
+        "fit_seconds": 152.22119160000875,
+        "predict_seconds": 4.462944300001254,
+        "n_features": 246
+      }
+    ],
+    "test": {
+      "logloss": [
+        0.3477561155461681,
+        0.0
+      ],
+      "auc": [
+        0.9073834186240214,
+        0.0
+      ],
+      "gauc": [
+        0.738301441918941,
+        0.0
+      ],
+      "ndcg@10": [
+        0.7700732973707327,
+        0.0
+      ],
+      "ndcg_sessions_share": [
+        0.567961281933977,
+        0.0
+      ]
+    },
+    "valid": {
+      "logloss": [
+        0.35443422808196073,
+        0.0
+      ],
+      "auc": [
+        0.9063078730400638,
+        0.0
+      ],
+      "gauc": [
+        0.7377339713776867,
+        0.0
+      ],
+      "ndcg@10": [
+        0.7659456340828595,
+        0.0
+      ],
+      "ndcg_sessions_share": [
+        0.5664826180715182,
+        0.0
+      ]
+    }
+  }
+}

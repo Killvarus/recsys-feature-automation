@@ -1,0 +1,53 @@
+{
+  "random_s0": {
+    "seconds": 0.0,
+    "preprocessing": "none",
+    "rows": 300000
+  },
+  "random_s1": {
+    "seconds": 0.0,
+    "preprocessing": "none",
+    "rows": 300000
+  },
+  "random_s2": {
+    "seconds": 0.0,
+    "preprocessing": "none",
+    "rows": 300000
+  },
+  "corr": {
+    "seconds": 0.3,
+    "preprocessing": "log1p_counts+fill_since_max+fill_mean+clip_q001",
+    "rows": 300000
+  },
+  "alpha_all_features": 251.18864315095823,
+  "ppop": {
+    "seconds": 12.1,
+    "preprocessing": "log1p_counts+fill_since_max+fill_mean+clip_q001",
+    "rows": 300000
+  },
+  "rfe_loo": {
+    "seconds": 3.6,
+    "preprocessing": "log1p_counts+fill_since_max+fill_mean+clip_q001",
+    "rows": 300000
+  },
+  "nn_weights": {
+    "seconds": 199.7,
+    "preprocessing": "log1p_counts+fill_since_max+fill_mean+clip_q001",
+    "rows": 300000
+  },
+  "gbc_builtin": {
+    "seconds": 628.2,
+    "preprocessing": "log1p_counts+fill_since_max+fill_mean+clip_q001",
+    "rows": 300000
+  },
+  "lgbm_gain": {
+    "seconds": 0.0,
+    "preprocessing": "none",
+    "rows": 300000
+  },
+  "permutation": {
+    "seconds": 929.2,
+    "preprocessing": "none",
+    "rows": 300000
+  }
+}

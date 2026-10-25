@@ -1,0 +1,163 @@
+{
+  "features": "handcrafted_shift0.parquet",
+  "heuristics": {
+    "prior": {
+      "logloss": 0.6072422925250927,
+      "auc": 0.5,
+      "gauc": 0.5,
+      "ndcg@10": 0.735101517273213,
+      "ndcg_sessions_share": 0.5608802312307206
+    },
+    "user_algo_listened_rate": {
+      "logloss": 0.46398789153186365,
+      "auc": 0.8163050169529075,
+      "gauc": 0.4455162372920138,
+      "ndcg@10": 0.6145448595714412,
+      "ndcg_sessions_share": 0.5608802312307206
+    },
+    "item_listened_rate": {
+      "logloss": 0.636587898747794,
+      "auc": 0.6463425901826602,
+      "gauc": 0.5583900505361074,
+      "ndcg@10": 0.7415251241246784,
+      "ndcg_sessions_share": 0.5608802312307206
+    },
+    "user_item_last_ratio": {
+      "logloss": 1.608596239151938,
+      "auc": 0.651712150279756,
+      "gauc": 0.5344883546361983,
+      "ndcg@10": 0.757558712329864,
+      "ndcg_sessions_share": 0.5608802312307206
+    },
+    "user_last20_listened": {
+      "logloss": 0.49116554693028036,
+      "auc": 0.8668376202563998,
+      "gauc": 0.6248944233237812,
+      "ndcg@10": 0.6810983710159491,
+      "ndcg_sessions_share": 0.5608802312307206
+    }
+  },
+  "grid": [
+    {
+      "num_leaves": 63,
+      "min_data_in_leaf": 100,
+      "logloss": 0.3486472268841475,
+      "auc": 0.9068846666679478,
+      "gauc": 0.7356499980590414,
+      "ndcg@10": 0.7686164958901067,
+      "ndcg_sessions_share": 0.567961281933977,
+      "best_iteration": 194
+    },
+    {
+      "num_leaves": 63,
+      "min_data_in_leaf": 1000,
+      "logloss": 0.34818327604071825,
+      "auc": 0.9071339710827898,
+      "gauc": 0.7379982446964893,
+      "ndcg@10": 0.7705018670101538,
+      "ndcg_sessions_share": 0.567961281933977,
+      "best_iteration": 219
+    },
+    {
+      "num_leaves": 255,
+      "min_data_in_leaf": 100,
+      "logloss": 0.34874058318353246,
+      "auc": 0.9068537224722264,
+      "gauc": 0.7356950004191308,
+      "ndcg@10": 0.7681917729816946,
+      "ndcg_sessions_share": 0.567961281933977,
+      "best_iteration": 75
+    },
+    {
+      "num_leaves": 255,
+      "min_data_in_leaf": 1000,
+      "logloss": 0.3485161751658698,
+      "auc": 0.9069486849389976,
+      "gauc": 0.7351496253862072,
+      "ndcg@10": 0.7694438029832704,
+      "ndcg_sessions_share": 0.567961281933977,
+      "best_iteration": 84
+    }
+  ],
+  "params": {
+    "objective": "binary",
+    "learning_rate": 0.05,
+    "num_leaves": 63,
+    "min_data_in_leaf": 1000,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "max_bin": 255,
+    "num_threads": 6,
+    "verbose": -1
+  },
+  "lgbm_all": {
+    "runs": [
+      {
+        "valid": {
+          "logloss": 0.34752136388223875,
+          "auc": 0.9075023191032446,
+          "gauc": 0.7385949289529554,
+          "ndcg@10": 0.7708773091134659,
+          "ndcg_sessions_share": 0.567961281933977
+        },
+        "test": {
+          "logloss": 0.34023301352813223,
+          "auc": 0.9086980031681053,
+          "gauc": 0.7363490954764226,
+          "ndcg@10": 0.7747408561065492,
+          "ndcg_sessions_share": 0.5608802312307206
+        },
+        "best_iteration": 620,
+        "fit_seconds": 151.49870060000103,
+        "predict_seconds": 6.538868900010129,
+        "n_features": 246
+      }
+    ],
+    "test": {
+      "logloss": [
+        0.34023301352813223,
+        0.0
+      ],
+      "auc": [
+        0.9086980031681053,
+        0.0
+      ],
+      "gauc": [
+        0.7363490954764226,
+        0.0
+      ],
+      "ndcg@10": [
+        0.7747408561065492,
+        0.0
+      ],
+      "ndcg_sessions_share": [
+        0.5608802312307206,
+        0.0
+      ]
+    },
+    "valid": {
+      "logloss": [
+        0.34752136388223875,
+        0.0
+      ],
+      "auc": [
+        0.9075023191032446,
+        0.0
+      ],
+      "gauc": [
+        0.7385949289529554,
+        0.0
+      ],
+      "ndcg@10": [
+        0.7708773091134659,
+        0.0
+      ],
+      "ndcg_sessions_share": [
+        0.567961281933977,
+        0.0
+      ]
+    }
+  }
+}

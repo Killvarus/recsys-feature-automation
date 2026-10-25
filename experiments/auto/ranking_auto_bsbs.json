@@ -1,0 +1,6 @@
+{
+  "alpha": 2511.886431509582,
+  "seconds": 102.6,
+  "rows": 300000,
+  "preprocessing": "log1p_counts+fill_since_max+fill_mean+clip_q001"
+}
