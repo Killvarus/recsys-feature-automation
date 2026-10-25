@@ -8,3 +8,5 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .venv/
+# Сохранённые прогнозы последовательной модели
+experiments/seq/*.parquet

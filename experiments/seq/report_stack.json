@@ -1,0 +1,58 @@
+{
+  "mode": "stack",
+  "params": 26625665,
+  "fit_seconds": 1772,
+  "predict_seconds_test": 45.2,
+  "train_rows": 600000,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_logloss": 0.4043476358191172,
+      "valid_logloss": 0.37822994589805603,
+      "seconds": 627.4
+    },
+    {
+      "epoch": 2,
+      "train_logloss": 0.377954406487147,
+      "valid_logloss": 0.3772481381893158,
+      "seconds": 567.5
+    },
+    {
+      "epoch": 3,
+      "train_logloss": 0.365478385070165,
+      "valid_logloss": 0.3787643015384674,
+      "seconds": 573.9
+    }
+  ],
+  "best_valid_logloss": 0.3772481381893158,
+  "valid": {
+    "logloss": 0.3772481597015507,
+    "auc": 0.893023688722837,
+    "gauc": 0.6867010378182228,
+    "ndcg@10": 0.7242946032565049,
+    "ndcg_sessions_share": 0.5621313126468754
+  },
+  "test": {
+    "logloss": 0.37628576786634477,
+    "auc": 0.8921968137035818,
+    "gauc": 0.6897161269129642,
+    "ndcg@10": 0.7287301225938552,
+    "ndcg_sessions_share": 0.5580504364694472
+  },
+  "args": {
+    "mode": "stack",
+    "length": "64",
+    "d": "64",
+    "epochs": "4",
+    "patience": "1",
+    "batch": "1024",
+    "lr": "0.001",
+    "seed": "0",
+    "stack_day": "277",
+    "match_flags": "False",
+    "tag": "",
+    "limit": "600000",
+    "out": "D:\\Desktop\\tbank\\task1\\experiments\\seq"
+  },
+  "late_train_rows": 507923
+}
